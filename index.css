@@ -1,0 +1,11 @@
+body {
+  overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+  /* Aquí puedes agregar tus estilos */
+  body {
+    overflow: visible;
+    width: 100%;
+  }
+}
