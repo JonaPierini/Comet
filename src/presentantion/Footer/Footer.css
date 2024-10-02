@@ -1,6 +1,24 @@
 footer {
-  background-color: tomato;
-  height: 5rem;
+  background-color: #21252a;
+  padding: 1.5rem;
+  text-align: center;
+  height: 7rem;
   width: 100%;
   margin-top: 1rem;
+}
+
+.footer-links {
+  margin-top: 1rem;
+}
+
+.footer-links a {
+  color: #5287ff;
+  text-decoration: none;
+  margin: 0 1rem;
+  transition: color 0.3s ease;
+  font-size: 1rem;
+}
+
+.footer-links a:hover {
+  color: #fff;
 }

@@ -53,4 +53,8 @@
   .lines-group {
     display: none;
   }
+
+  .spinner-img {
+    display: none;
+  }
 }

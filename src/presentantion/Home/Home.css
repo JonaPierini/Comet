@@ -1,48 +1,115 @@
-.parent {
+.main-container {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Espacio entre las dos secciones */
-  margin: 0 auto; /* Centra el contenedor en la página */
-  padding: 2rem; /* Añade algo de espacio alrededor del contenedor */
+  justify-content: space-between; 
+  margin: 0 auto; 
+  padding: 2rem; /
 }
 
-.child1 {
+.section-content-one {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  height: 60vh;
   width: 50%;
 }
 
-.child2 {
+.section-content-two {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 50%;
 }
 
-.child2 img {
-  height: 60vh; /* Ajusta la altura máxima de la imagen para dejar espacio para otros elementos */
-  width: auto; /* Mantén la proporción original */
+.section-content-two img {
+  height: 60vh; 
+  width: auto; 
   border-radius: 20px;
 }
 
+.header-content h3 {
+  color: #5287ff;
+}
+
+.header-content span {
+  font-weight: 800;
+}
+
+.feature-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.feature-container img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 1rem;
+}
+
+.feature-container h4 {
+  font-weight: 600;
+}
+
+.feature-container p {
+  margin-bottom: 1rem;
+}
+
+.feature-container span {
+  border-bottom: 2px solid #000;
+  padding-bottom: 0.2rem;
+}
+
+.learn-more {
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
-  /* Para pantallas más pequeñas, como tabletas y móviles */
-  .parent {
-    flex-direction: column; /* Cambia la dirección de los hijos a columna */
-    align-items: stretch; /* Alinea los hijos para que ocupen todo el ancho */
+  .main-container {
+    flex-direction: column;
+    align-items: stretch;
+		margin-top: 2rem;
   }
 
-  .child1,
-  .child2 {
-    width: 100%; /* Ocupan el ancho completo en pantallas pequeñas */
-    margin-bottom: 1rem; /* Añade un poco de espacio entre los hijos */
+  .section-content-one,
+  .section-content-two {
+    width: 100%;
+    margin-bottom: 1rem;
   }
 
-  .child2 img {
-    width: 100%; /* La imagen también ocupa todo el ancho disponible */
-    height: auto; /* Ajusta la altura para mantener la proporción correcta */
+  .section-content-two img {
+    width: 100%;
+    height: auto;
   }
+
+  .feature-container {
+		margin-top: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+		
+  }
+
+  .feature-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 20rem;
+  }
+}
+
+@media (max-width: 468px) {
+	.header-content {
+		text-align: center;
+	}
+	.feature-container {
+		display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	}
+	.feature-content {
+		height: 100%;
+	}
 }

@@ -1,62 +1,42 @@
 import "./Home.css";
+import { RiArrowRightUpLine } from "react-icons/ri";
 export const Home = () => {
   return (
     <>
-      <main className="parent">
-        <section className="child1">
-          {/* Titulo y demas */}
-          <div>
-            <h3 style={{ color: "#5287FF" }}>Core features</h3>
+      <main className="main-container">
+        <section className="section-content-one">
+          <article className="header-content">
+            <h3>Core features</h3>
             <h1>Develops systematically with Comet.</h1>
             <p>
-              <span style={{ fontWeight: 800 }}>
-                Adaptable sections are ideal for{" "}
-              </span>
+              <span>Adaptable sections are ideal for </span>
               crafting versatile layouts.
             </p>
-          </div>
+          </article>
 
-          <div
-            style={{
-              display: "flex",
-              alignItems: "flex-start", // Alinear todos los elementos en la parte superior
-              justifyContent: "center",
-              gap: "1rem", // Añadir espacio entre los divs hijos
-              marginBottom: "2rem",
-            }}
-          >
-            <div>
-              <img
-                src="./fingerprint.png"
-                style={{ width: "40px", height: "40px", marginBottom: "1rem" }}
-                alt="Fingerprint icon"
-              />
-              <h4 style={{ fontWeight: 600 }}>System analyze your data</h4>
-              <p style={{ marginBottom: "1rem" }}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <article className="feature-container">
+            <div className="feature-content">
+              <img src="./fingerprint.png" alt="Finger-icon" />
+              <h4>System analyze your data</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p className="learn-more">
+                <span>Le</span>arn more
+                <RiArrowRightUpLine />
               </p>
-              <span style={{ color: "#5287FF", cursor: "pointer" }}>
-                Learn more
-              </span>
             </div>
-            <div>
-              <img
-                src="./24-hours.png"
-                style={{ width: "40px", height: "40px", marginBottom: "1rem" }}
-                alt="24 hours icon"
-              />
-              <h4 style={{ fontWeight: 600 }}>Direct system management</h4>
-              <p style={{ marginBottom: "1rem" }}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <div className="feature-content">
+              <img src="./24-hours.png" alt="24-hours-icon" />
+              <h4>Direct system management</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p className="learn-more">
+                <span>Le</span>arn more
+                <RiArrowRightUpLine />
               </p>
-              <span style={{ color: "#5287FF", cursor: "pointer" }}>
-                Learn more
-              </span>
             </div>
-          </div>
+          </article>
         </section>
 
-        <section className="child2">
+        <section className="section-content-two">
           <img src="./home.jpg"></img>
         </section>
       </main>
