@@ -1,10 +1,8 @@
 footer {
-  background-color: #21252a;
+  background-color: #f5f5f7;
   padding: 1.5rem;
   text-align: center;
   height: 7rem;
-  width: 100%;
-  margin-top: 1rem;
 }
 
 .footer-links {
@@ -12,7 +10,7 @@ footer {
 }
 
 .footer-links a {
-  color: #5287ff;
+  color: #212528;
   text-decoration: none;
   margin: 0 1rem;
   transition: color 0.3s ease;
@@ -20,5 +18,5 @@ footer {
 }
 
 .footer-links a:hover {
-  color: #fff;
+  color: #5287ff;
 }

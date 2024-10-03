@@ -9,19 +9,19 @@ export const NavBar = () => {
   return (
     <header>
       <nav>
-        <ul className="nav-list">
-          <li className="nav-item">
-            <div className="icons-group">
-              <span className="icon">
+        <ul className="d-flex alig-item-center justify-content-between">
+          <li className="nav-item ">
+            <div>
+              <span className="ms-2">
                 <RiTwitterXLine />
               </span>
-              <span className="icon">
+              <span className="ms-2">
                 <FaInstagram />
               </span>
-              <span className="icon">
+              <span className="ms-2">
                 <FaLinkedinIn />
               </span>
-              <span className="icon">
+              <span className="ms-2">
                 <IoBasketballOutline />
               </span>
             </div>
